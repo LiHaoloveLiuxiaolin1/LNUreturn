@@ -10,9 +10,9 @@
     <title>返校通行证(2分钟内有效)</title>
     <link rel="stylesheet" href="css/weui.min.css">
     <script type="text/javascript" src="js/weui.min.js?v=2021111211044" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/showtime.js" charset="UTF-8"></script>
 </head>
-<body ontouchstart>
-
+<body ontouchstart onload="getTime()">
 <div id="bodyDiv">
 	<p style="text-align:center;" id="imgBg"><br/><img src="images/pass1.png" alt=""><br/><br/></p>
 	<div class="weui-cells__title">学生返校通行证</div>
@@ -38,7 +38,7 @@
 		<div class="weui-cell  weui-cell_example">
 			<div class="weui-cell__hd"><img src="images/time.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
 			<div class="weui-cell__bd">
-				<p>时间：2021/11/1 21:10:44</p>
+				<p id="showtime"></p>
 			</div>
 		</div>
 		
